@@ -66,7 +66,7 @@ export async function BuyCourse(
 
     // Opening the Razorpay SDK
     const options = {
-      key: process.env.RAZORPAY_KEY,
+      key: process.env.REACT_APP_RAZORPAY_KEY,
       currency: orderResponse.data.data.currency,
       amount: `${orderResponse.data.data.amount}`,
       order_id: orderResponse.data.data.id,
@@ -82,6 +82,7 @@ export async function BuyCourse(
         verifyPayment({ ...response, courses }, token, navigate, dispatch)
       },
     }
+    console.log("KEY: ",key);
     const paymentObject = new window.Razorpay(options)
 
     paymentObject.open()
