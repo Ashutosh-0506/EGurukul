@@ -82,7 +82,7 @@ export async function BuyCourse(
         verifyPayment({ ...response, courses }, token, navigate, dispatch)
       },
     }
-    console.log("KEY: ",key);
+    console.log("KEY: ",process.env.REACT_APP_RAZORPAY_KEY);
     const paymentObject = new window.Razorpay(options)
 
     paymentObject.open()
