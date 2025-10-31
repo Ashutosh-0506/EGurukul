@@ -188,7 +188,3 @@ Maintainer: Ashutosh-0506
 
 ---
 
-If you want, I can:
-- Tailor this README to match the actual code (I can inspect the repo and automatically fill in tech stack, scripts, and usage).
-- Add badges (CI, coverage, license) and example screenshots or GIFs.
-- Create CONTRIBUTING.md and LICENSE files for you. Which would you like next?
